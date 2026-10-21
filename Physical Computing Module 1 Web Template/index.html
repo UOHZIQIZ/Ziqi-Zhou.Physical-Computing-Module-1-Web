@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Physical Computing Fall 2026</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {
+  font-family: "Poppins", sans-serif
+  }
+body {
+  font-size:16px;
+  }
+h1 { 
+  font-size:30px;
+  }
+h2 {
+  font-size:25px;
+  }
+  h3 {
+  font-size:18px;
+  }
+img {
+  width: 100%;
+  height: 100%;
+}
+.grid {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+.w3-half img{
+  margin-bottom:-6px;
+  margin-top:16px;
+  opacity:0.8;
+  cursor:pointer
+  } */
+.w3-half img:hover{
+  opacity:1
+  }
+
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:200px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-display-topleft" style="display:none;font-size:22px"></a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>IXD<br>DESN 30146<br>Fall 2026</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#Home" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#Module1" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Module 1</a> 
+    <a href="#Activity1" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Activity 1</a> 
+    <a href="#Activity2" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Activity 2</a>
+    <a href="#Activity3" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Activity 3</a>
+    <a href="#ResearchActivity" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Research Activity</a>
+    <a href="#ProjectConcept" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Project Concept</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens
+<header class="w3-container w3-top w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Menu</span>
+</header> -->
+
+<!-- 
+  if you want to link your image to a video use one of the following alt links as an example:
+
+  alt="test1Lorem ipsum dolor sit amet, consectetur adipiscing elit test1Lorem ipsum dolor sit amet, consectetur adipiscing elit <a href='https://www.youtube.com/embed/tgbNymZ7vqY' target='_blank'><p>Project Video Link</p></a>"> 
+  alt="test2Lorem ipsum dolor sit amet, consectetur adipiscing elit <div class='container'><iframe class='responsive-iframe' src='https://www.youtube.com/embed/tgbNymZ7vqY'></iframe></div>">
+
+-->
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:220px;margin-right:20px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="default">
+    <h1 class="w3-jumbo" id="Home"><b>Physical Computing</b></h1>
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Weekly Activity Template</b></h1>
+      <h1 class="w3-xxxlarge w3-text-blue"><b>Ziqi Zhou</b></h1>
+    <hr style="width:50px;border:5px solid grey" class="w3-round">
+  </div>
+  <!-- Boilerplate -->
+  <div id="Module1" class="w3-container" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Module 1</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h2>Activity Research</h2>
+    <h3>In Activity 1, I made my first attempt to use the Blink sample application for Arduino to see the full flow from code compilation to uploading to an onboard LED blink.<br>
+	In Activity 2, I primarily explored how to connect an Arduino to ProtoPie Connect so that data from physical sensors could influence the digital interface. By collecting sensor data via the Arduino and then using ProtoPie Connect to transmit that data to the interactive prototype, I was able to achieve real-time interaction between physical inputs and the digital interface. This activity gave me a deeper understanding of how hardware, data, and UI/UX prototypes are connected and work together.<br>
+	In this activity 3, I connected Arduino to TouchDesigner and used a potentiometer to control a circular visual effect in real time. I explored how sensor data can be transferred through serial communication and used to change digital visuals. I learned how to check Arduino data, connect basic TouchDesigner nodes, and adjust visual parameters. This helped me understand how physical inputs can create interactive visual experiences.
+    </h3>
+  </div>
+  
+  <!-- Project 1 Photo grid (modal) -->
+  <div id="Activity1" >
+    <h2>Activity 1</h2>
+    <div class="grid">
+      <img src="images/Activity1/1.jpg" style="width:100%" onclick="onClick(this)" alt="Basic preparation tools: converters, transmission lines, circuit boards, LED lights. <a href='https://www.youtube.com/embed/tgbNymZ7vqY' target='_blank'><p>Project Video Link</p></a>"> 
+      <img src="images/Activity1/2.jpg" style="width:100%" onclick="onClick(this)" alt="Observe the on-board LED flashing at 1-second intervals. <div class='container'><iframe class='responsive-iframe' src='https://www.youtube.com/embed/tgbNymZ7vqY'></iframe></div>">
+      <img src="images/Activity1/3.jpg" style="width:100%" onclick="onClick(this)" alt="Verify that hardware and software are working properly.">
+      <img src="images/Activity1/4.jpg" style="width:100%" onclick="onClick(this)" alt="Download Arduino to the computer, and complete the Arduino Uno program.">
+      <img src="images/Activity1/5.jpg" style="width:100%" onclick="onClick(this)" alt="Start running the built-in Blink example to see the complete code compilation and upload process.">
+    </div>
+  </div>
+  
+  <hr style="width:90%;border:5px solid grey;margin-top:80px" class="w3-round"></hr>
+
+  <div id="Activity2" class="w3-row-padding">
+    <h2>Activity 2</h2>
+    <div class="grid">
+      <img src="images/Activity2/1.png" style="width:100%" onclick="onClick(this)" alt="I prepared the Arduino, Seeed Studio Sensor Shield, and computer needed for this activity. These tools were used to collect sensor data and connect it to ProtoPie.">
+      <img src="images/Activity2/2.png" style="width:100%" onclick="onClick(this)" alt="I connected the Arduino to my computer and opened the required project files to prepare the hardware and software for communication.">
+      <img src="images/Activity2/3.png" style="width:100%" onclick="onClick(this)" alt="I opened ProtoPie Connect and connected it to the Arduino by selecting the correct port and baud rate.">
+      <img src="images/Activity2/4.png" style="width:100%" onclick="onClick(this)" alt="I ran the project in ProtoPie Connect and confirmed that the Arduino data was being received successfully.">
+      <img src="images/Activity2/5.png" style="width:100%" onclick="onClick(this)" alt="I changed the sensor input and observed the prototype responding in real time, confirming that the connection between Arduino and ProtoPie was working correctly.">
+    </div>
+  </div>
+
+  <hr style="width:90%;border:5px solid grey;margin-top:80px" class="w3-round"></hr>
+
+  <div id="Activity3" class="w3-row-padding">
+    <h2>Activity 3</h2>
+    <div class="grid">
+      <img src="images/Activity3/1.png" style="width:100%" onclick="onClick(this)" alt="Uploaded the code to Arduino and checked the sensor data in the Serial Monitor.">
+      <img src="images/Activity3/2.png" style="width:100%" onclick="onClick(this)" alt="Connected Arduino to TouchDesigner to use sensor data to control the visuals.">
+      <img src="images/Activity3/3.png" style="width:100%" onclick="onClick(this)" alt="Connected nodes to create a circular gradient with red and yellow colours.">
+      <img src="images/Activity3/4.png" style="width:100%" onclick="onClick(this)" alt="Adjusted the node parameters to create a blue centre with a red outer edge.">
+      <img src="images/Activity3/5.png" style="width:100%" onclick="onClick(this)" alt="Turned the potentiometer to observe changes in the visual effect in real time.">
+    </div>
+  </div>
+
+  <hr style="width:90%;border:5px solid grey;margin-top:80px" class="w3-round"></hr>
+
+  <div id="ResearchActivity" class="w3-row-padding">
+    <h2>Research Activity</h2>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h2>Consumer Trend Research</h2>
+    <h3>I researched future home experiences using TrendBible and explored interaction examples from TrendWatching. I focused on sensory experiences and intuitive physical interaction as starting points for my project.<br><br>
+	Category 1 — Home Sensory Experiences<br>
+	TrendBible’s 2027 forecast discusses sensory-rich interiors and the desire for calm. This inspired me to explore darkness, light and moving imagery as elements of an interactive experience.<br>
+	Category 2 — Intuitive Home Interaction<br>
+	“Embedded Flexibility” discusses adaptable spaces and intuitive technology. This encouraged me to explore how simple physical actions could influence a digital environment.
+    </h3>
+    <div class="grid">
+      <img src="images/Research/1.png" style="width:100%" onclick="onClick(this)" alt="TrendBible’s sensory and calming home forecast provided a starting point for exploring light, atmosphere and participation.">
+      <img src="images/Research/2.png" style="width:100%" onclick="onClick(this)" alt="Embedded Flexibility encouraged me to consider how an environment could respond to changing activities and simple interactions.">
+      <img src="images/Research/3.png" style="width:100%" onclick="onClick(this)" alt="This historical example connects physical adjustment with responsive feedback. I used it to explore interaction principles rather than current product trends.">
+    </div>
+    <h2>Personas Research</h2>
+    <h3>I used Pew Research Center findings to develop two provisional personas: a simplicity-oriented technology user and a privacy-conscious participant. These are research interpretations, not interviewed individuals.<br><br>
+	Category 1 — Simplicity-oriented Technology User<br>
+	This persona represents someone who does not necessarily value complex personalization. I want to investigate whether clear feedback and simple controls support their participation.<br>
+	Category 2 — Privacy-conscious Participant<br>
+	This persona represents someone concerned about personal data collection. This encouraged me to consider clear explanations of camera use and an alternative mouse-control mode.
+    </h3>
+    <div class="grid">
+      <img src="images/Research/4.png" style="width:100%" onclick="onClick(this)" alt="In Pew’s 2019 U.S. study, 43% of smart speaker owners did not consider personalization important. This informed my exploration of simpler interactions.">
+      <img src="images/Research/5.png" style="width:100%" onclick="onClick(this)" alt="In the same study, 66% rejected greater personalization when it required more personal data. This informed my consideration of participation choices.">
+      <img src="images/Research/6.png" style="width:100%" onclick="onClick(this)" alt="Device ownership varies across age groups. However, ownership alone does not establish individual skills, needs or preferences.">
+    </div>
+    <h2>HMI Research</h2>
+    <h3>I used the instructor’s How Might We resources to turn research insights into open-ended questions. The questions focus on participation, understandable feedback and choice.<br><br>
+	Category 1 — Sensory Participation<br>
+	· Potential problem spaces include understanding action–visual relationships and accommodating different interaction preferences.<br>
+	· How might we make physical actions visibly influence a digital environment?<br>
+	· How might we support participation at a comfortable pace?<br>
+	Category 2 — Understandable Interaction<br>
+	· Potential problem spaces include discovering the controls and understanding camera use.<br>
+	· How might we make the interaction easy to discover?<br>
+	· How might we offer informed choices about participation?
+    </h3>
+    <div class="grid">
+      <img src="images/Research/7.png" style="width:100%" onclick="onClick(this)" alt="This guidance helped me focus on the intended experience without requiring fish, a camera or a particular sensor in the question.">
+      <img src="images/Research/8.png" style="width:100%" onclick="onClick(this)" alt="The HMW formula helped me connect an intended action, a potential participant and a desired outcome.">
+      <img src="images/Research/9.png" style="width:100%" onclick="onClick(this)" alt="I used these five tips to review my HMW questions, keeping them research-informed, outcome-focused, positive and open to different solutions.">
+    </div>
+    <h2>Project Path</h2>
+    <h3>
+	I want participants to reveal hidden fish through shading and influence their movement through a mouse or hand gestures. The focus is artistic exploration and sensory participation.<br><br>
+	Art Path<br>
+	I want participants to reveal hidden fish through shading and influence their movement through a mouse or hand gestures. The focus is artistic exploration and sensory participation.<br>
+	Working Approach<br>
+	I would prefer to collaborate to exchange ideas and combine technical and visual skills. If a suitable partner is not available, I can develop the project individually.<br>
+	Possible Direction 1 — Mouse Control<br>
+	Covering the Arduino light sensor gradually reveals the fish. The mouse guides a leader fish, while the others follow and maintain spacing.<br>
+	Possible Direction 2 — Hand Control<br>
+	Camera-based hand tracking guides the leader fish, while mouse control remains available. Tracking compatibility and stability require testing.
+    </h3>
+    <div class="grid">
+      <img src="images/Research/1.png" style="width:100%" onclick="onClick(this)" alt="The home sensory trend inspires me to explore the atmosphere formed by light and darkness and develop it into an engaging digital ocean experience.">
+      <img src="images/Research/11.png" style="width:100%" onclick="onClick(this)" alt="Studio Roosegaarde’s GLOWING NATURE inspired me to explore how physical participation reveals hidden life. My project interprets this relationship through sensor input and digital fish.">
+      <img src="images/Research/12.png" style="width:100%" onclick="onClick(this)" alt="The concept preview showcases the leading fish, school of fish following and simulated shading to illustrate the expected experience, rather than the completed Arduino-TouchDesigner device.">
+    </div>
+  </div>
+
+  <hr style="width:90%;border:5px solid grey;margin-top:80px" class="w3-round"></hr>
+
+  <!-- Boilerplate -->
+  <div id="ProjectConcept" class="w3-container" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Project 1 Concept</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h2>Project 1 Concept</h2>
+    <p>ART Path — Signal → Visual (TouchDesigner)<br>
+Concept: <br>
+Light Beneath the Dark is a proposed interactive artwork combining Arduino and TouchDesigner. The scene begins as a dark ocean. Covering the light sensor gradually reveals glowing fish, while restoring light makes them slowly fade away.<br>
+
+Interaction: <br>
+I plan to offer mouse control and camera-based hand tracking. Participants guide a leader fish, while the others follow with spacing, delay and smooth turning.<br>
+
+Artistic Exploration: <br>
+The project explores darkness, hidden life and the relationship between physical actions and digital environments. Participants gradually discover how their presence influences the scene.<br>
+
+Inspiration: <br>
+Studio Roosegaarde’s GLOWING NATURE inspired my exploration of actions revealing luminous life. My project interprets this relationship through sensors and digital imagery.<br>
+
+Next Steps: <br>
+I will first develop mouse-controlled fish movement, then connect the light sensor and test hand tracking. Testing will focus on understandable controls, natural movement and clear responses to shading.
+    </p>
+    <img src="images/Concept/13.png" style="width:100%" onclick="onClick(this)" alt="My idea is for participants to cover the Arduino light sensor with one hand to gradually reveal the glowing fish, while moving their other hand for the computer’s built-in camera to track. This movement guides the leader fish, while the other fish follow. The computer, Arduino and projector are placed on the same table, with TouchDesigner processing the visuals and projecting them onto the wall. This image was generated with AI assistance based on my ideas to illustrate the planned setup and interaction. The actual setup and effects still need to be tested.">
+  </div>
+  
+   <!-- Modal for full size images on click-->
+   <div id="modal01" class="w3-modal w3-grey" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-center w3-transparent" style ="padding:20px">
+      <img id="img01" class="w3-image">
+      <h2 id="caption"></h2>
+
+      <!-- <div id="urLink"></div> -->
+      <!-- <a id="urLink" class="container"><iframe class="responsive-iframe"></iframe></a> -->
+    <!-- </div> -->
+  </div>
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+
+  // var captionUrl = document.getElementById("urLink");
+  // captionUrl.innerHTML = element.url;
+
+  //document.getElementById("urLink").src = element.url;
+}
+</script>
+
+</body>
+</html>
