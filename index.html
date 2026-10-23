@@ -107,8 +107,8 @@ img {
     <h1 class="w3-xxxlarge w3-text-red"><b>Module 1</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <h2>Activity Research</h2>
-    <h3>In Activity 1, I made my first attempt to use the Blink sample application for Arduino to see the full flow from code compilation to uploading to an onboard LED blink.<br>
-	In Activity 2, I primarily explored how to connect an Arduino to ProtoPie Connect so that data from physical sensors could influence the digital interface. By collecting sensor data via the Arduino and then using ProtoPie Connect to transmit that data to the interactive prototype, I was able to achieve real-time interaction between physical inputs and the digital interface. This activity gave me a deeper understanding of how hardware, data, and UI/UX prototypes are connected and work together.<br>
+    <h3>In Activity 1, I made my first attempt to use the Blink sample application for Arduino to see the full flow from code compilation to uploading to an onboard LED blink.<br><br>
+	In Activity 2, I primarily explored how to connect an Arduino to ProtoPie Connect so that data from physical sensors could influence the digital interface. By collecting sensor data via the Arduino and then using ProtoPie Connect to transmit that data to the interactive prototype, I was able to achieve real-time interaction between physical inputs and the digital interface. This activity gave me a deeper understanding of how hardware, data, and UI/UX prototypes are connected and work together.<br><br>
 	In this activity 3, I connected Arduino to TouchDesigner and used a potentiometer to control a circular visual effect in real time. I explored how sensor data can be transferred through serial communication and used to change digital visuals. I learned how to check Arduino data, connect basic TouchDesigner nodes, and adjust visual parameters. This helped me understand how physical inputs can create interactive visual experiences.
     </h3>
   </div>
@@ -157,11 +157,14 @@ img {
     <h2>Research Activity</h2>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <h2>Consumer Trend Research</h2>
-    <h3>I researched future home experiences using TrendBible and explored interaction examples from TrendWatching. I focused on sensory experiences and intuitive physical interaction as starting points for my project.<br><br>
-	Category 1 — Home Sensory Experiences<br>
-	TrendBible’s 2027 forecast discusses sensory-rich interiors and the desire for calm. This inspired me to explore darkness, light and moving imagery as elements of an interactive experience.<br>
-	Category 2 — Intuitive Home Interaction<br>
-	“Embedded Flexibility” discusses adaptable spaces and intuitive technology. This encouraged me to explore how simple physical actions could influence a digital environment.
+    <h3>I reviewed TrendBible's home forecasts and historical interaction examples from TrendWatching to explore possible directions for my project concept. From this research, I identified two areas of interest: sensory-rich environments and intuitive physical interaction.<br><br>
+Category 1: Sensory-rich Environments<br>
+I reviewed TrendBible's discussion of sensory-rich and calm home environments, particularly "Texture Drenching." This encouraged me to consider how light, movement and sound could work together to shape an atmosphere.<br>
+In my project concept, I interpreted this research through a dark ocean and glowing fish. I considered a simple scene as the foundation, with animated backgrounds, music and changing fish colours as possible additions. These are my artistic interpretations of the research, rather than features directly recommended by TrendBible.<br><br>
+		
+Category 2: Intuitive Physical Interaction<br>
+I also reviewed TrendBible's "Embedded Flexibility" and historical examples from TrendWatching. Stir Kinetic Desk helped me consider how physical actions and system responses could form an understandable connection.<br>
+This inspired me to explore a small number of gestures within my project concept: making a left fist to reveal the fish and moving my right hand to control the entire school. These interactions remain conceptual, and their clarity and consistency would need to be investigated through further exploration.
     </h3>
     <div class="grid">
       <img src="images/Research/1.png" style="width:100%" onclick="onClick(this)" alt="TrendBible’s sensory and calming home forecast provided a starting point for exploring light, atmosphere and participation.">
@@ -169,11 +172,15 @@ img {
       <img src="images/Research/3.png" style="width:100%" onclick="onClick(this)" alt="This historical example connects physical adjustment with responsive feedback. I used it to explore interaction principles rather than current product trends.">
     </div>
     <h2>Personas Research</h2>
-    <h3>I used Pew Research Center findings to develop two provisional personas: a simplicity-oriented technology user and a privacy-conscious participant. These are research interpretations, not interviewed individuals.<br><br>
-	Category 1 — Simplicity-oriented Technology User<br>
-	This persona represents someone who does not necessarily value complex personalization. I want to investigate whether clear feedback and simple controls support their participation.<br>
-	Category 2 — Privacy-conscious Participant<br>
-	This persona represents someone concerned about personal data collection. This encouraged me to consider clear explanations of camera use and an alternative mouse-control mode.
+    <h3>I developed two provisional personas based on Pew Research Center findings to consider my project concept from different perspectives. These personas are interpretations of secondary research, not interviewed individuals.<br><br>
+
+Category 1: Simplicity-oriented Technology User<br>
+Pew's research on smart speakers encouraged me to question whether more personalization and additional features always improve an experience. I developed a provisional persona who may place greater value on understandable controls and clear feedback.<br>
+This perspective influenced the structure of my concept: basic gesture interaction would form the core, while backgrounds, music and colour changes would remain supporting features for further exploration. I want these additions to enrich the experience while keeping the main interaction understandable.<br><br>
+
+Category 2: Privacy-conscious Technology User<br>
+I also researched the relationship between personal data collection and personalization. This informed a provisional persona who considers what technology senses and how that information is used.<br>
+For my project concept, this means investigating what Kinect tracks, what data TouchDesigner receives and whether the system stores any information. These questions will help me assess the technical approach and develop an accurate explanation of tracking later.
     </h3>
     <div class="grid">
       <img src="images/Research/4.png" style="width:100%" onclick="onClick(this)" alt="In Pew’s 2019 U.S. study, 43% of smart speaker owners did not consider personalization important. This informed my exploration of simpler interactions.">
@@ -181,15 +188,17 @@ img {
       <img src="images/Research/6.png" style="width:100%" onclick="onClick(this)" alt="Device ownership varies across age groups. However, ownership alone does not establish individual skills, needs or preferences.">
     </div>
     <h2>HMI Research</h2>
-    <h3>I used the instructor’s How Might We resources to turn research insights into open-ended questions. The questions focus on participation, understandable feedback and choice.<br><br>
-	Category 1 — Sensory Participation<br>
-	· Potential problem spaces include understanding action–visual relationships and accommodating different interaction preferences.<br>
-	· How might we make physical actions visibly influence a digital environment?<br>
-	· How might we support participation at a comfortable pace?<br>
-	Category 2 — Understandable Interaction<br>
-	· Potential problem spaces include discovering the controls and understanding camera use.<br>
-	· How might we make the interaction easy to discover?<br>
-	· How might we offer informed choices about participation?
+    <h3>I reviewed How Might We resources from Nielsen Norman Group and the Interaction Design Foundation. These helped me turn research findings into open-ended questions without prescribing fish, Kinect or projection as the solution.<br><br>
+
+Category 1: Sensory Experience and Visual Feedback<br>
+I identified two areas for investigation: the relationship between physical actions and visual changes, and the balance between sensory richness and interaction clarity.<br>
+· How might we make the relationship between physical actions and visual changes easy to understand?<br>
+· How might we combine sensory elements to create an expressive atmosphere while keeping the main interaction clear?<br><br>
+
+Category 2: Learning the Interaction and Tracking Transparency<br>
+I identified two further areas: discovering unfamiliar controls and understanding the purpose of tracking.<br>
+· How might we make an unfamiliar interaction easy to discover and learn?<br>
+· How might we clearly explain what an interactive system senses and how that information is used?<br>
     </h3>
     <div class="grid">
       <img src="images/Research/7.png" style="width:100%" onclick="onClick(this)" alt="This guidance helped me focus on the intended experience without requiring fish, a camera or a particular sensor in the question.">
@@ -197,16 +206,26 @@ img {
       <img src="images/Research/9.png" style="width:100%" onclick="onClick(this)" alt="I used these five tips to review my HMW questions, keeping them research-informed, outcome-focused, positive and open to different solutions.">
     </div>
     <h2>Project Path</h2>
-    <h3>
-	I want participants to reveal hidden fish through shading and influence their movement through a mouse or hand gestures. The focus is artistic exploration and sensory participation.<br><br>
-	Art Path<br>
-	I want participants to reveal hidden fish through shading and influence their movement through a mouse or hand gestures. The focus is artistic exploration and sensory participation.<br>
-	Working Approach<br>
-	I would prefer to collaborate to exchange ideas and combine technical and visual skills. If a suitable partner is not available, I can develop the project individually.<br>
-	Possible Direction 1 — Mouse Control<br>
-	Covering the Arduino light sensor gradually reveals the fish. The mouse guides a leader fish, while the others follow and maintain spacing.<br>
-	Possible Direction 2 — Hand Control<br>
-	Camera-based hand tracking guides the leader fish, while mouse control remains available. Tracking compatibility and stability require testing.
+    <h3>Art Path<br>
+Based on my research, I chose the Art path as the direction for my project concept. I want to explore the relationship between my physical gestures and digital life. Through darkness and glowing fish, I hope to express a transition from hidden life to visible movement. The concept focuses on atmosphere, motion and the relationship between physical actions and a projected environment.<br><br>
+		
+Category 1: Basic Gesture Interaction<br>
+My basic idea is to use Kinect to track both hands and send movement data to TouchDesigner. Making a fist with my left hand would gradually reveal glowing fish, while moving my right hand would change the position and swimming direction of the entire school. A projector would display the visuals on a wall.<br>
+The concept centres on the entire fish school responding to my movements. I want to explore gesture recognition, smooth group movement and clear visual feedback. The implementation would be adjusted according to further research and practical conditions.<br><br>
+
+Category 2: Supporting Sensory Features<br>
+Building on the basic concept, I am considering animated ocean backgrounds, atmospheric music and gradual fish-colour changes as supporting features within the same project concept.<br>
+These effects are intended to create a more dreamlike atmosphere. Whether to include them, how to combine them and how far to develop them will depend on the progress of the basic interaction.<br><br>
+		
+Working Approach:<br>
+I would prefer to collaborate, exchanging ideas and combining technical and visual skills to develop the concept. If I work independently, I will explore tracking, animation and projection gradually, according to the available equipment, time and my learning progress, before considering supporting effects.<br><br>
+
+Artistic Inspiration:<br>
+Studio Roosegaarde's GLOWING NATURE inspired me to consider how physical actions can reveal luminous life. My project concept explores an artistic interpretation of this relationship through gesture tracking and digital imagery.<br><br>
+
+Current Progress and Next Steps:<br>
+I have created a concept preview and installation illustrations with AI assistance to communicate the intended experience. The combination of Kinect, TouchDesigner and projection remains a proposed technical approach requiring further exploration.<br>
+Next, I will begin translating the concept into initial experiments, exploring the basic gesture interaction and gradually developing supporting elements such as backgrounds, music and colour changes according to practical results. Throughout this process, I will document outcomes, feedback and revisions to refine the project concept.
     </h3>
     <div class="grid">
       <img src="images/Research/1.png" style="width:100%" onclick="onClick(this)" alt="The home sensory trend inspires me to explore the atmosphere formed by light and darkness and develop it into an engaging digital ocean experience.">
@@ -222,23 +241,23 @@ img {
     <h1 class="w3-xxxlarge w3-text-red"><b>Project 1 Concept</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <h2>Project 1 Concept</h2>
-    <p>ART Path — Signal → Visual (TouchDesigner)<br>
+    <p>ART Path — Gesture → Visual (Kinect + TouchDesigner)<br><br>
 Concept: <br>
-Light Beneath the Dark is a proposed interactive artwork combining Arduino and TouchDesigner. The scene begins as a dark ocean. Covering the light sensor gradually reveals glowing fish, while restoring light makes them slowly fade away.<br>
+My project concept is an interactive artwork using Kinect, TouchDesigner and a projector. Participants use hand gestures to gradually reveal and move the visuals created in TouchDesigner.<br><br>
 
 Interaction: <br>
-I plan to offer mouse control and camera-based hand tracking. Participants guide a leader fish, while the others follow with spacing, delay and smooth turning.<br>
+My idea is to use Kinect to track the movements of my hands and send the motion data to TouchDesigner to control the school of fish on the screen. The screen initially displays a deep, dark ocean; when I clench my left fist, a school of glowing fish gradually appears. At the same time, I can control the position and swimming direction of the entire school by moving my right hand. The fish will respond smoothly to my movements and maintain a certain distance from one another as they move, creating a natural school-swimming effect. Finally, the image is projected onto a wall, creating a connection between my body movements and the digital lifeforms in the projection. These are the interactive effects I plan to implement, though I still need to set up the connections and conduct testing.<br><br>
 
 Artistic Exploration: <br>
-The project explores darkness, hidden life and the relationship between physical actions and digital environments. Participants gradually discover how their presence influences the scene.<br>
+My project explores darkness, hidden life, and the relationship between bodily gestures and digital environments. By contrasting a deep, dark ocean background with schools of glowing fish, I aim to express the transformation of life from concealment to revelation. By controlling the schools of fish through gestures, I seek to explore how bodily movements translate into visual changes, allowing the digital ocean to take on a sense of life that responds to movement.<br><br>
 
 Inspiration: <br>
-Studio Roosegaarde’s GLOWING NATURE inspired my exploration of actions revealing luminous life. My project interprets this relationship through sensors and digital imagery.<br>
+Studio Roosegaarde's "GLOWING NATURE" inspired me to reflect on the connection between bodily movement and luminous life forms. I hope to translate this inspiration into a digital format, using Kinect gesture tracking, schools of glowing fish, and projections to explore how movement reveals hidden life and influences its motion.<br><br>
 
 Next Steps: <br>
-I will first develop mouse-controlled fish movement, then connect the light sensor and test hand tracking. Testing will focus on understandable controls, natural movement and clear responses to shading.
+I will first connect the Kinect to TouchDesigner to test hand tracking and left-hand fist recognition, and then link the movement of my right hand to the movement of the entire school of fish. Afterward, I will refine the dark ocean background, the fish's glow effects, and their swimming animations, and test the wall projection. I will focus on checking whether the gesture recognition is stable, whether the visual response is clear, and whether the fish's movements appear natural.
     </p>
-    <img src="images/Concept/13.png" style="width:100%" onclick="onClick(this)" alt="My idea is for participants to cover the Arduino light sensor with one hand to gradually reveal the glowing fish, while moving their other hand for the computer’s built-in camera to track. This movement guides the leader fish, while the other fish follow. The computer, Arduino and projector are placed on the same table, with TouchDesigner processing the visuals and projecting them onto the wall. This image was generated with AI assistance based on my ideas to illustrate the planned setup and interaction. The actual setup and effects still need to be tested.">
+    <img src="images/Concept/13.png" style="width:100%" onclick="onClick(this)" alt="This image was generated by AI based on my ideas and is used to show the planned layout and interaction methods of the device. The actual effect still needs to be tested.">
   </div>
   
    <!-- Modal for full size images on click-->
